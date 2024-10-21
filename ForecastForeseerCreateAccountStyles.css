@@ -1,0 +1,11 @@
+﻿#first {
+    color: mediumseagreen;
+}
+
+#last {
+    color: mediumseagreen;
+}
+
+.notVisible {
+    visibility: hidden;
+}
