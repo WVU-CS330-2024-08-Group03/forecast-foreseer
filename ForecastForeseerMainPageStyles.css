@@ -1,7 +1,7 @@
 #Header {
     margin: auto;
     position: relative;
-    height: 8vh;
+    height: 12vh;
     border: 3px solid rgb(75, 75, 75);
 }
 
@@ -13,7 +13,7 @@
 
 #LocationHeader {
     position: absolute;
-    top: -1vh;
+    top: -2vh;
     width: 100%;
     text-align: center;
 }
@@ -23,7 +23,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     position: absolute;
-    top: 6vh;
+    top: 9vh;
     width: 100%;
 }
 
@@ -34,6 +34,22 @@
     justify-content: right;
     position: absolute;
     top: 1vh;
+}
+
+#WebAppBody {
+    margin: auto;
+    position: relative;
+    height: 75vh;
+    border: 3px solid rgb(75, 75, 75);
+}
+
+#CurrentWeather {
+    margin: auto;
+    position: relative;
+    top: 2.5svh;
+    height: 15vh;
+    width: 200vh;
+    border: 3px solid rgb(75, 75, 75);
 }
 
 .OffsetUser {
@@ -48,4 +64,7 @@
 
 #CalendarLink {
     color: rgb(22, 192, 135);
+    position: relative;
+    bottom: -50vh;
+    right: -150vh;
 }
