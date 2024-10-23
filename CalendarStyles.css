@@ -3,7 +3,8 @@
     width: 100%;
     table-layout: fixed;
     border-radius: 5px;
-    border-spacing: 8px;
+    border-spacing: 0; /* Remove spacing between cells */
+    background-color: #f9f9f9; /* Light background for the entire calendar */
 }
 
 #calendarHeader {
@@ -28,7 +29,6 @@
     background-color: #f0f0f0;
     padding: 10px;
     text-align: center;
-    border: 1px solid #ccc;
 }
 
 .calendarTop:hover {
@@ -37,13 +37,15 @@
 }
 
 .calendarCell {
-    border: 2px solid rgb(50, 50, 50);
     height: 10vh;
-    border-radius: 5px;
+    background-color: #ffffff; 
+    padding: 10px; 
+    border: 1px solid rgb(200, 200, 200); 
+    text-align: left; 
+    vertical-align: top; 
 }
 
 .calendarHeader {
-    border: 2px solid rgb(50, 50, 50);
     height: 5vh;
     border-radius: 5px;
 }
