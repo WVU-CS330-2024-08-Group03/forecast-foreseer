@@ -46,10 +46,96 @@
 #CurrentWeather {
     margin: auto;
     position: relative;
-    top: 2.5svh;
+    top: 2.5vh;
     height: 15vh;
     width: 200vh;
     border: 3px solid rgb(75, 75, 75);
+}
+
+#PrecipitationChance {
+    margin: auto;
+    position: relative;
+    top: 4vh;
+    right: 75vh;
+    height: 11vh;
+    width: 50vh;
+    border: 3px solid rgb(75, 75, 75);
+    text-align: center;
+}
+
+#Humidity {
+    margin: auto;
+    position: relative;
+    top: 5vh;
+    right: 75vh;
+    height: 11vh;
+    width: 50vh;
+    border: 3px solid rgb(75, 75, 75);
+    text-align: center;
+}
+
+#UVIndex {
+    margin: auto;
+    position: relative;
+    top: 6vh;
+    right: 75vh;
+    height: 11vh;
+    width: 50vh;
+    border: 3px solid rgb(75, 75, 75);
+    text-align: center;
+}
+
+#Wind {
+    margin: auto;
+    position: relative;
+    top: 7vh;
+    right: 75vh;
+    height: 11vh;
+    width: 50vh;
+    border: 3px solid rgb(75, 75, 75);
+    text-align: center;
+}
+
+#WeatherAlerts {
+    margin: auto;
+    position: relative;
+    bottom: 43.5vh;
+    height: 24vh;
+    width: 90vh;
+    border: 3px solid rgb(75, 75, 75);
+    text-align: center;
+}
+
+#SattelliteMap {
+    margin: auto;
+    position: relative;
+    bottom: 43vh;
+    height: 24vh;
+    width: 90vh;
+    border: 3px solid rgb(75, 75, 75);
+    text-align: center;
+}
+
+#Suggestions {
+    margin: auto;
+    position: relative;
+    width: 53.5vh;
+    height: 11vh;
+    bottom: 93.4vh;
+    left: 73.5vh;
+    border: 3px solid rgb(75, 75, 75);
+    text-align: center;
+}
+
+#CalendarBox {
+    margin: auto;
+    position: relative;
+    width: 53.5vh;
+    height: 36.15vh;
+    bottom: 92vh;
+    left: 73.5vh;
+    border: 3px solid rgb(75, 75, 75);
+    text-align: center;
 }
 
 .OffsetUser {
@@ -62,9 +148,3 @@
     right: 8vw;
 }
 
-#CalendarLink {
-    color: rgb(22, 192, 135);
-    position: relative;
-    bottom: -50vh;
-    right: -150vh;
-}
