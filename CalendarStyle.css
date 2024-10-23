@@ -1,1 +1,15 @@
+#calendar {
+    border: 2px solid rgb(50, 50, 50);
+    width: 100%;
+    table-layout: fixed;
+}
 
+.calendarCell {
+    border: 2px solid rgb(50, 50, 50);
+    height: 10vh;
+}
+
+.calendarHeader {
+    border: 2px solid rgb(50, 50, 50);
+    height: 5vh;
+}
