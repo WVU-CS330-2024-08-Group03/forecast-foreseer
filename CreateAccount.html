@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forecast Foreseer Create Account</title>
+    <link href="CreateAccountStyles.css" rel="stylesheet" />
+    <script src="CreateAccount.js"></script>
+</head>
+<body>
+    <form action="" method="POST">
+        <div>
+            <label for="first" id="firstNameLabel">First Name:</label>
+            <input type="text" name="first" id="first" />
+        </div>
+        <div>
+            <label for="last">Last Name:</label>
+            <input type="text" name="last" id="last" />
+        </div>
+        <div>
+            <label for="birthDate">Date of Birth:</label>
+            <input type="date" name="birthDate" id="birthDate" onchange="ageCount"/>
+            <p class="notVisible" id="isAge">Entered age is under minimum age</p>
+        </div>
+        <div>
+            <input type="submit" />
+        </div>
+    </form>
+</body>
+</html>
