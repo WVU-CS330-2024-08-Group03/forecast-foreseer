@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="CalendarStyle.css" rel="stylesheet">
-    </header>
+        <title>Monthly Calendar</title>
+    </head>
     <body>
         <h1 id="calendarHeader">Calendar</h1>
         <table id="calendar">
             <tr>
-                <th class="calendarTop">Prev Month</th>
+                <th class="calendarTop" onclick="changeMonth(-1)">Prev Month</th>
                 <th id="calendarMonth" class="calendarTop" colspan="5">Month</th>
-                <th class="calendarTop">Next Month</th>
+                <th class="calendarTop" onclick="changeMonth(1)">Next Month</th>
             </tr>
             <tr>
                 <th class="calendarHeader">Sunday</th>
@@ -22,61 +23,12 @@
                 <th class="calendarHeader">Friday</th>
                 <th class="calendarHeader">Saturday</th>
             </tr>
-            <tr id="firstWeek">
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-            </tr>
-            <tr id="secondWeek">
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-            </tr>
-            <tr id="thirdWeek">
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-            </tr>
-            <tr id="fourthWeek">
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-            </tr>
-            <tr id="fifthWeek">
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-            </tr>
-            <tr id="sixthWeek">
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-                <td class="calendarCell"></td>
-            </tr>
+            <tbody id="calendarBody">
+                <!-- Days of the month will be generated dynamically by JavaScript -->
+            </tbody>
         </table>
         <a href="ForecastForeseerMainPage.html" target="_self">Main Page</a>
+
+        <script src="ForecastForeseerCalendar.js"></script>
     </body>
 </html>
