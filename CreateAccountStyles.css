@@ -9,3 +9,28 @@
 .notVisible {
     visibility: hidden;
 }
+
+label {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 8px;
+}
+
+input[type=text], input[type=date] {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 300px;
+    border-radius: 4px;
+    color: white;
+    background-color: mediumseagreen;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px 110px;
+}
