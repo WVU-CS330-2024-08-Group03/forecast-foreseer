@@ -2,14 +2,32 @@
     border: 2px solid rgb(50, 50, 50);
     width: 100%;
     table-layout: fixed;
+    border-radius: 5px;
+    border-spacing: 8px;
+}
+
+#calendarHeader {
+    text-align: center;
+    width: 100%;
+}
+
+#calendarMonth {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.calendarTop {
+    height: 10vh;
 }
 
 .calendarCell {
     border: 2px solid rgb(50, 50, 50);
     height: 10vh;
+    border-radius: 5px;
 }
 
 .calendarHeader {
     border: 2px solid rgb(50, 50, 50);
     height: 5vh;
+    border-radius: 5px;
 }
