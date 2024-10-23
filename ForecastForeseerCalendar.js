@@ -4,7 +4,9 @@ let currentMonth = new Date();
 
 // Function to display the days of the current month
 function displayMonth() {
-    calendarBody.innerHTML = '';  // Clear previous calendar
+
+    // Clear previous calendar
+    calendarBody.innerHTML = '';
 
     const month = currentMonth.getMonth();
     const year = currentMonth.getFullYear();
@@ -18,7 +20,10 @@ function displayMonth() {
     const daysInMonth = new Date(year, month + 1, 0).getDate();
 
     let day = 1;
-    for (let i = 0; i < 6; i++) { // 6 weeks to cover all possible days
+    let rowCount = Math.ceil((firstDay + daysInMonth) / 7);  // Calculate the number of rows needed
+
+    // Create the Calendar
+    for (let i = 0; i < rowCount; i++) { // Use the calculated number of rows
         const row = document.createElement('tr');
         for (let j = 0; j < 7; j++) {
             const cell = document.createElement('td');

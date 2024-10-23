@@ -16,8 +16,24 @@
     font-weight: bold;
 }
 
+.calendarMonthName {
+    height: 10vh;
+    background-color: #cad1fc;
+    color: #ffffff;
+}
+
 .calendarTop {
     height: 10vh;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.calendarTop:hover {
+    background-color: #e0e0e0;
+    color: #000;
 }
 
 .calendarCell {
