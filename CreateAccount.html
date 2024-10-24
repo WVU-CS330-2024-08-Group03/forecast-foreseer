@@ -13,35 +13,35 @@
     <!-- Creates form to getting user information-->
     <form action="" method="POST">
 
-        <!--Text title-->
-        <div id="create-account">
-            Create Your Account
-        </div>
-        
-        <!-- Text box for user's first name-->
-        <div>
-            <label for="first" id="firstNameLabel">First Name:</label>
-            <input type="text" name="first" id="first" />
-        </div>
+        <!--Container for inputs and text-->
+        <div id="container">
+            <div>
+                Create Your Account
+            </div>
+            <!-- Text box for user's first name-->
+            <div>
+                <label for="first" id="firstNameLabel">First Name:</label>
+                <input type="text" name="first" id="first" />
+            </div>
 
-        <!-- Text box for user's last name-->
-        <div>
-            <label for="last">Last Name:</label>
-            <input type="text" name="last" id="last" />
-        </div>
+            <!-- Text box for user's last name-->
+            <div>
+                <label for="last" id="lastNameLabel">Last Name:</label>
+                <input type="text" name="last" id="last" />
+            </div>
 
-        <!-- Date input for user's date of birth-->
-        <div>
-            <label for="birthDate">Date of Birth:</label>
-            <input type="date" name="birthDate" id="birthDate" onchange="ageCount"/>
-            <p class="notVisible" id="isAge">Entered age is under minimum age</p>
-        </div>
+            <!-- Date input for user's date of birth-->
+            <div>
+                <label for="birthDate" id="birthDateLabel">Date of Birth:</label>
+                <input type="date" name="birthDate" id="birthDate" onchange="ageCount"/>
+                <p class="notVisible" id="isAge">Entered age is under minimum age</p>
+            </div>
 
-        <!-- Submit button for form-->
-        <div>
-            <input type="submit" />
+            <!-- Submit button for form-->
+            <div>
+                <input type="submit" id="submitButton"/>
+            </div>
         </div>
-        
     </form>
 </body>
 </html>
