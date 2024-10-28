@@ -1,73 +1,120 @@
 #Header {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
     position: relative;
-    height: 12vh;
     border: 3px solid rgb(75, 75, 75);
+    flex-wrap: wrap;
+}
+
+#headerRow1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #SiteName {
-    position: absolute;
-    top: -1.5vh;
-    left: 0.25vw;
+    text-align: left;
+    width: 33%;
 }
 
 #LocationHeader {
-    position: absolute;
-    top: -2vh;
-    width: 100%;
     text-align: center;
+    min-width: 33%;
+}
+
+#FlexButtons {
+    display: flex;
+    justify-content: right;
+    gap: 12px;
+    min-width: 33%;
 }
 
 #FlexCast {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    position: absolute;
-    top: 9vh;
-    width: 100%;
-}
-
-#FlexButtons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    position: absolute;
-    top: 1vh;
+    flex-wrap: wrap;
 }
 
 #WebAppBody {
-    margin: auto;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    height: 75vh;
+    height: 78vh;
     border: 3px solid rgb(75, 75, 75);
 }
 
 #CurrentWeather {
-    margin: auto;
-    position: relative;
-    top: 2.5vh;
-    height: 15vh;
-    width: 200vh;
+    display: flex;
+    padding: 4px;
+    margin: 8px;
+    height: 25%;
     border: 3px solid rgb(75, 75, 75);
 }
 
-#PrecipitationChance {
-    margin: auto;
-    position: relative;
-    top: 4vh;
-    right: 75vh;
-    height: 11vh;
-    width: 50vh;
-    border: 3px solid rgb(75, 75, 75);
+#columns {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    gap: 1%;
+    margin: 4px;
+    padding: 4px;
+}
+
+#leftColumn {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-height: 100%;
+    gap: 1%;
+}
+
+#leftColumn div {
     text-align: center;
+    border: 3px solid rgb(75, 75, 75);
+    height: 25%;
 }
 
+#middleColumn {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1%;
+}
+
+#middleColumn div {
+    text-align: center;
+    border: 3px solid rgb(75, 75, 75);
+    height: 50%;
+}
+
+#rightColumn {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 1%;
+}
+
+#rightColumn div {
+    text-align: center;
+    border: 3px solid rgb(75, 75, 75);
+}
+
+#Suggestions {
+    height: 25%;
+}
+
+#CalendarBox {
+    height: 75%
+}
+
+/*
 #Humidity {
     margin: auto;
     position: relative;
     top: 5vh;
-    right: 75vh;
     height: 11vh;
     width: 50vh;
     border: 3px solid rgb(75, 75, 75);
@@ -78,7 +125,6 @@
     margin: auto;
     position: relative;
     top: 6vh;
-    right: 75vh;
     height: 11vh;
     width: 50vh;
     border: 3px solid rgb(75, 75, 75);
@@ -89,12 +135,12 @@
     margin: auto;
     position: relative;
     top: 7vh;
-    right: 75vh;
     height: 11vh;
     width: 50vh;
     border: 3px solid rgb(75, 75, 75);
     text-align: center;
 }
+
 
 #WeatherAlerts {
     margin: auto;
@@ -147,4 +193,4 @@
     position: absolute;
     right: 8vw;
 }
-
+*/
