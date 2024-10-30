@@ -1,16 +1,27 @@
+body {
+    background: linear-gradient(rgb(44, 71, 145),rgb(70, 214, 250), rgb(212, 223, 235));
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(49, 49, 59);
+}
+
 #Header {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
     position: relative;
-    border: 3px solid rgb(75, 75, 75);
+    border-radius: 4px;
     flex-wrap: wrap;
+    background-color: white;
 }
 
 #headerRow1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 #SiteName {
@@ -43,7 +54,6 @@
     justify-content: center;
     position: relative;
     height: 78vh;
-    border: 3px solid rgb(75, 75, 75);
 }
 
 #CurrentWeather {
@@ -51,7 +61,8 @@
     padding: 4px;
     margin: 8px;
     height: 25%;
-    border: 3px solid rgb(75, 75, 75);
+    border-radius: 4px;
+    background-color: white;
 }
 
 #columns {
@@ -73,8 +84,9 @@
 
 #leftColumn div {
     text-align: center;
-    border: 3px solid rgb(75, 75, 75);
+    border-radius: 4px;
     height: 25%;
+    background-color: white;
 }
 
 #middleColumn {
@@ -86,8 +98,9 @@
 
 #middleColumn div {
     text-align: center;
-    border: 3px solid rgb(75, 75, 75);
+    border-radius: 4px;
     height: 50%;
+    background-color: white;
 }
 
 #rightColumn {
@@ -99,7 +112,8 @@
 
 #rightColumn div {
     text-align: center;
-    border: 3px solid rgb(75, 75, 75);
+    border-radius: 4px;
+    background-color: white;
 }
 
 #Suggestions {
@@ -109,88 +123,3 @@
 #CalendarBox {
     height: 75%
 }
-
-/*
-#Humidity {
-    margin: auto;
-    position: relative;
-    top: 5vh;
-    height: 11vh;
-    width: 50vh;
-    border: 3px solid rgb(75, 75, 75);
-    text-align: center;
-}
-
-#UVIndex {
-    margin: auto;
-    position: relative;
-    top: 6vh;
-    height: 11vh;
-    width: 50vh;
-    border: 3px solid rgb(75, 75, 75);
-    text-align: center;
-}
-
-#Wind {
-    margin: auto;
-    position: relative;
-    top: 7vh;
-    height: 11vh;
-    width: 50vh;
-    border: 3px solid rgb(75, 75, 75);
-    text-align: center;
-}
-
-
-#WeatherAlerts {
-    margin: auto;
-    position: relative;
-    bottom: 43.5vh;
-    height: 24vh;
-    width: 90vh;
-    border: 3px solid rgb(75, 75, 75);
-    text-align: center;
-}
-
-#SattelliteMap {
-    margin: auto;
-    position: relative;
-    bottom: 43vh;
-    height: 24vh;
-    width: 90vh;
-    border: 3px solid rgb(75, 75, 75);
-    text-align: center;
-}
-
-#Suggestions {
-    margin: auto;
-    position: relative;
-    width: 53.5vh;
-    height: 11vh;
-    bottom: 93.4vh;
-    left: 73.5vh;
-    border: 3px solid rgb(75, 75, 75);
-    text-align: center;
-}
-
-#CalendarBox {
-    margin: auto;
-    position: relative;
-    width: 53.5vh;
-    height: 36.15vh;
-    bottom: 92vh;
-    left: 73.5vh;
-    border: 3px solid rgb(75, 75, 75);
-    text-align: center;
-}
-
-.OffsetUser {
-    position: absolute;
-    right: 2vw;
-}
-
-.OffsetWarning {
-    position: absolute;
-    right: 8vw;
-}
-*/
