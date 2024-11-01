@@ -25,7 +25,7 @@ function showMap(position) {
  * If there is an error displaying Google Maps, display OpenStreetMap
  */
 
-function showError() {
+function showError(error) {
     const mapFrame = document.getElementById("mapFrame");
     mapFrame.src = "https://www.openstreetmap.org"; // Default map if location is unavailable
 }
