@@ -74,7 +74,7 @@ body {
     padding: 4px;
 }
 
-#leftColumn {
+#leftColumn { /* pre -> wind boxes*/
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -82,28 +82,28 @@ body {
     gap: 1%;
 }
 
-#leftColumn div {
+#leftColumn div { /* pre -> wind boxes*/
     text-align: center;
     border-radius: 4px;
     height: 25%;
     background-color: white;
 }
 
-#middleColumn {
+#middleColumn { /* map box*/
     display: flex;
     flex-direction: column;
     width: 40%;
     gap: 1%;
 }
 
-#middleColumn div {
+#middleColumn div { /* map */
     text-align: center;
     border-radius: 4px;
     height: 50%;
     background-color: white;
 }
 
-#rightColumn {
+#rightColumn { /* how far over suggestions/calendar go over*/
     display: flex;
     flex-direction: column;
     width: 30%;
