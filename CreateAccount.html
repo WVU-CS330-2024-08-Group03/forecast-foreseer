@@ -7,6 +7,7 @@
     <title>Forecast Foreseer Create Account</title>
     <link href="CreateAccountStyles.css" rel="stylesheet" />
     <script src="jquery-3.7.1.js"></script>
+    <script src="CreateAccount.js"></script>
 </head>
 <body>
 
@@ -33,8 +34,18 @@
             <!-- Date input for user's date of birth-->
             <div>
                 <label for="birthDate" id="birthDateLabel">Date of Birth:</label>
-                <input type="date" name="birthDate" id="birthDate" onchange="ageCount"/>
-                <p class="notVisible" id="isAge">Entered age is under minimum age</p>
+                <input type="date" name="birthDate" id="birthDate"/>
+                <p id="isAge" style="display:none">Entered age is under minimum age</p>
+            </div>
+
+            <div>
+                <label for="forUsername" id="usernameLabel">Username:</label>
+                <input type="text" id="username"/>
+            </div>
+
+            <div>
+                <label for="email" id="emailLabel">Email:</label>
+                <input type="text" id="email"/>
             </div>
 
             <!-- Submit button for form-->

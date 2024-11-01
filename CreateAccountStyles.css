@@ -1,8 +1,4 @@
-﻿.notVisible {
-    visibility: hidden;
-}
-
-div {
+﻿div {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -41,6 +37,6 @@ input[type=submit] {
     width: 312px;
     padding: 15px;
     position: relative;
-    top: -5vh;
+    top: 2vh;
     flex: 0 1 auto;
 }
