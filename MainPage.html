@@ -40,7 +40,15 @@
 
             <!-- Displays current weather/temperature-->
             <div id="CurrentWeather">
-                Temperature
+                <!--Displays temperature-->
+                <div id="Temperature">
+                    Temperature
+                </div>
+
+                <!-- Displays weather alerts-->
+                <div id="WeatherAlerts">
+                    Weather Alerts
+                </div>
             </div>
 
             <div id="columns">
@@ -69,18 +77,13 @@
                 </div>
 
                 <div id="middleColumn">
-                    <!-- Displays weather alerts-->
-                    <div id="WeatherAlerts">
-                        Weather Alerts
-                    </div>
 
                     <!-- Displays satellite map-->
                     <div id="SatelliteMap">
-                        Satellite Map
                         <iframe 
                             id="mapFrame" 
                             width="100%" 
-                            height="300" 
+                            height="100%"
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy">
