@@ -67,10 +67,17 @@ body {
 }
 
 #CurrentWeather div {
-    width: 50%;
     text-align: center;
     background-color: white;
     border-radius: 4px;
+}
+
+#Temperature {
+    width: 75%;
+}
+
+#WeatherAlerts {
+    width: 25%;
 }
 
 #columns {
