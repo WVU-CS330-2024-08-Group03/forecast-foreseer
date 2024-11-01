@@ -6,6 +6,7 @@
         <title>Forecast Foreseer</title>
         <link href="MainPageStyles.css" rel="stylesheet">
         <link rel="icon" href="images/favicon.png">
+        <script src="MainPage.js"></script>
     </head>
     <body>
 
@@ -74,8 +75,16 @@
                     </div>
 
                     <!-- Displays satellite map-->
-                    <div id="SattelliteMap">
+                    <div id="SatelliteMap">
                         Satellite Map
+                        <iframe 
+                            id="mapFrame" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
                     </div>
                 </div>
 
