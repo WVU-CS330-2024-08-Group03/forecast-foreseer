@@ -2,6 +2,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.badInput {
+    position: relative;
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: 9px;
+    left: 52px;
+    color: rgb(255, 50, 50);
+}
+
 #container {
     display: flex;
     flex-direction: column;

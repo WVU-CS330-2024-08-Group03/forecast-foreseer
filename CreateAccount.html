@@ -12,7 +12,7 @@
 <body>
 
     <!-- Creates form to getting user information-->
-    <form action="" method="POST">
+    <form action="MainPage.html" method="POST" id="userInfoForm">
 
         <!--Container for inputs and text-->
         <div id="container">
@@ -22,30 +22,32 @@
             <!-- Text box for user's first name-->
             <div>
                 <label for="first" id="firstNameLabel">First Name:</label>
-                <input type="text" name="first" id="first" />
+                <input type="text" name="first" id="first" required/>
             </div>
 
             <!-- Text box for user's last name-->
             <div>
                 <label for="last" id="lastNameLabel">Last Name:</label>
-                <input type="text" name="last" id="last" />
+                <input type="text" name="last" id="last" required/>
             </div>
 
             <!-- Date input for user's date of birth-->
             <div>
                 <label for="birthDate" id="birthDateLabel">Date of Birth:</label>
-                <input type="date" name="birthDate" id="birthDate"/>
-                <p id="isAge" style="display:none">Entered age is under minimum age</p>
+                <input type="date" name="birthDate" id="birthDate" min="1900-01-01" required/>
+                <p class="badInput" id="isAge" style="display:none">Entered age is under minimum age</p>
             </div>
 
+            <!-- Text box for user's display name/username-->
             <div>
-                <label for="forUsername" id="usernameLabel">Username:</label>
-                <input type="text" id="username"/>
+                <label for="username" id="usernameLabel">Username:</label>
+                <input type="text" name="username" id="username" required/>
             </div>
 
+            <!-- Text box for user's email address-->
             <div>
                 <label for="email" id="emailLabel">Email:</label>
-                <input type="text" id="email"/>
+                <input type="text" name="email" id="email" required/>
             </div>
 
             <!-- Submit button for form-->
