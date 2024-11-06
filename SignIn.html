@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Forecast Foreseer Create Account</title>
+        <link href="SignInStyles.css" rel="stylesheet" />
+        <script src="jquery-3.7.1.js"></script>
+        <script src="SignIn.js"></script>
+    </head>
+    <body>
+        <form action="MainPage.html" method="POST" id="signInForm">
+            <div id="container">
+                <div id="heading">Sign In</div>
+                <div>
+                    <label for="username" id="usernameLabel">Username:</label>
+                    <input type="text" name="username" id="username" required/>
+                </div>
+                <div>
+                    <label for="password" id="passwordLabel">Password:</label>
+                    <input type="text" name="password" id="password" />
+                </div>
+                <div>
+                    <input type="submit" id="submitButton"/>
+                </div>
+                <div>
+                    <a href="forgotUsername.html" type="_self" id="forgotUsername">Forgot Username</a>
+                </div>
+                <div>
+                    <a href="forgotPassword.html" type="_self" id="forgotPassword">Forgot Password</a>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
