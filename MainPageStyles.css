@@ -33,6 +33,8 @@ body {
 #LocationHeader {
     text-align: center;
     min-width: 33%;
+    min-height: 1.5em;
+    max-height: 5%;
 }
 
 #FlexButtons {

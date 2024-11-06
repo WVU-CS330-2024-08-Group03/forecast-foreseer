@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(initLocationAndMap, showError);
+        navigator.geolocation.getCurrentPosition(locationAndMap, showError);
     } else {
         document.getElementById("mapFrame").src = "https://www.openstreetmap.org";
         document.getElementById("LocationHeader").textContent = "Location Unavailable";
@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
  * @param {Object} position Geolocation position object.
  */
 
-function initLocationAndMap(position) {
+function locationAndMap(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
     const locationHeader = document.getElementById("LocationHeader");
-    const apiKey = "AIzaSyAtitR8lFqlvEyzDrbI01yu5My5OLtF0bE"; // Replace with your API key
+    const apiKey = "AIzaSyAtitR8lFqlvEyzDrbI01yu5My5OLtF0bE";
 
     // Set the iframe src for the satellite map
     const mapFrame = document.getElementById("mapFrame");
@@ -38,7 +38,8 @@ function initLocationAndMap(position) {
         .catch(error => {
             console.error("Error fetching location data:", error);
             locationHeader.textContent = "Location Unavailable";
-        });
+        }
+    );
 }
 
 /**
