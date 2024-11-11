@@ -34,7 +34,7 @@
             <!-- Date input for user's date of birth-->
             <div>
                 <label for="birthDate" id="birthDateLabel">Date of Birth:</label>
-                <input type="date" name="birthDate" id="birthDate" min="1900-01-01" required/>
+                <input type="date" name="birthDate" id="birthDate" required/>
                 <p class="badInput" id="isAge" style="display:none">Entered age is under minimum age</p>
             </div>
 
@@ -42,12 +42,21 @@
             <div>
                 <label for="username" id="usernameLabel">Username:</label>
                 <input type="text" name="username" id="username" required/>
+                <p id="badChars" class="badInput" style="display: none">Username cannot include spaces or special characters other than . - and _</p>
             </div>
 
             <!-- Text box for user's email address-->
             <div>
                 <label for="email" id="emailLabel">Email:</label>
                 <input type="text" name="email" id="email" required/>
+            </div>
+
+            <div>
+                <label for="password" id="passwordLabel">Password:</label>
+                <input type="password" name="password" id="password" minlength="8" required />
+                <p id="missSymbol" class="badInput" style="display: none">Password is missing a symbol</p>
+                <p id="missLetter" class="badInput" style="display: none">Password is missing a lowercase or an uppercase letter</p>
+                <p id="missNumber" class="badInput" style="display: none">Password is missing a number</p>
             </div>
 
             <!-- Submit button for form-->
