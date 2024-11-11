@@ -47,3 +47,21 @@ input[type=submit] {
     margin-bottom: 2vh;
     flex: 0 1 auto;
 }
+
+#forgotUsername {
+    margin-top: 20px;
+}
+
+#createAccount {
+    margin-top: 20px;
+}
+
+#createAccountLink {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#createAccountLink:hover {
+    color: #003366;
+    text-decoration: underline;
+}
