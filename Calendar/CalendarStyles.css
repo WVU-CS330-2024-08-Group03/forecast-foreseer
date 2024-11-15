@@ -52,6 +52,25 @@
     border-radius: 5px;
 }
 
+
+.headerRibbon {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: left;
+}
+
+.headerLink {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.headerLink:hover {
+    text-decoration: underline;
+}
+
+
 /* Event display in calendar cell */
 .eventText {
     background-color: #e6f7e6;
