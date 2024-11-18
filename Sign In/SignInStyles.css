@@ -23,7 +23,7 @@ label {
     flex: 0 1 auto;
 }
 
-input[type=text], input[type=date] {
+input[type=text], input[type=date], input[type=checkbox], input[type=password] {
     font-family: inherit;
     box-sizing: border-box;
     width: 200px;

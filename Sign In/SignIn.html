@@ -6,8 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Forecast Foreseer Create Account</title>
         <link href="SignInStyles.css" rel="stylesheet" />
-        <script src="jquery-3.7.1.js"></script>
-        <script src="SignIn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script src="../Sign In/SignIn.js"></script>
     </head>
     <body>
         <form action="../Main Page/MainPage.html" method="POST" id="signInForm">
@@ -15,20 +17,24 @@
                 <div id="heading">Sign In</div>
                 <div>
                     <label for="username" id="usernameLabel">Username:</label>
-                    <input type="text" name="username" id="username" required/>
+                    <input type="text" name="username" id="username" required autocomplete="1"/>
                 </div>
                 <div>
                     <label for="password" id="passwordLabel">Password:</label>
-                    <input type="text" name="password" id="password" />
+                    <input type="password" name="password" id="password" />
+                </div>
+                <div>
+                    <label for="showPass" id="showPassLabel">Show Password:</label>
+                    <input type="checkbox" name="showPass" id="showPass"/>
                 </div>
                 <div>
                     <input type="submit" id="submitButton"/>
                 </div>
                 <div id="forgotUsername">
-                    <a href="forgotUsername.html" type="_self">Forgot Username</a>
+                    <a href="../Sign In/ForgotInfo/ForgotUser.html" type="_self">Forgot Username</a>
                 </div>
                 <div id="forgotPassword">
-                    <a href="forgotPassword.html" type="_self">Forgot Password</a>
+                    <a href="../Sign In/ForgotInfo/ForgotPass.html" type="_self">Forgot Password</a>
                 </div>
                 <div id="createAccount">
                     <a>New user?</a>
