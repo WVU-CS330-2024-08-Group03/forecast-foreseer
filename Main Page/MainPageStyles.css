@@ -72,11 +72,11 @@ body {
     border-radius: 4px;
 }
 
-#Temperature {
+#TempBox {
     width: 71%;
 }
 
-#WeatherAlerts {
+#WeatherAlertsBox {
     width: 30%;
 }
 

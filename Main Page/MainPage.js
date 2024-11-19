@@ -107,8 +107,8 @@ function insertWeatherData(weatherData) {
  * Display the current weather on the page.
  */
 function displayCurrentWeather(weather) {
-    document.getElementById("Temperature").textContent = `Temperature: ${weather.temperature}°C`;
-    document.getElementById("WeatherAlerts").textContent = `Weather: ${weather.weatherDescription}`;
+    document.getElementById("Temperature").textContent = `${weather.temperature}°C`;
+    document.getElementById("WeatherAlerts").textContent = `${weather.weatherDescription}`;
     document.getElementById("PrecipitationChance").textContent = `${weather.precipitation}%`;
     document.getElementById("Humidity").textContent = `${weather.humidity}%`;
     document.getElementById("UVIndex").textContent = `${weather.uvIndex}`;
