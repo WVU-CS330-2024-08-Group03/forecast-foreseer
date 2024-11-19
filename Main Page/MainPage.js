@@ -109,10 +109,10 @@ function insertWeatherData(weatherData) {
 function displayCurrentWeather(weather) {
     document.getElementById("Temperature").textContent = `Temperature: ${weather.temperature}°C`;
     document.getElementById("WeatherAlerts").textContent = `Weather: ${weather.weatherDescription}`;
-    document.getElementById("PrecipitationChance").textContent = `Precipitation Chance: ${weather.precipitation}%`;
-    document.getElementById("Humidity").textContent = `Humidity: ${weather.humidity}%`;
-    document.getElementById("UVIndex").textContent = `UV Index: ${weather.uvIndex}`;
-    document.getElementById("Wind").textContent = `Wind Speed: ${weather.windSpeed} m/s`;
+    document.getElementById("PrecipitationChance").textContent = `${weather.precipitation}%`;
+    document.getElementById("Humidity").textContent = `${weather.humidity}%`;
+    document.getElementById("UVIndex").textContent = `${weather.uvIndex}`;
+    document.getElementById("Wind").textContent = `${weather.windSpeed} m/s`;
 }
 
 /**
