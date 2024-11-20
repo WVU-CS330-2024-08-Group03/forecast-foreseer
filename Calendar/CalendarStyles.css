@@ -47,14 +47,16 @@
     position: relative;
 }
 
-.calendarHeader {
-    height: 5vh;
-    border-radius: 5px;
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
-
 .headerRibbon {
-    background-color: #f0f0f0;
+    background-color: #333;
     padding: 10px;
     text-align: left;
 }
@@ -62,7 +64,7 @@
 .headerLink {
     margin-right: 20px;
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
 }
 
