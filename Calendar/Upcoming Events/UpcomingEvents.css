@@ -1,8 +1,47 @@
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.headerRibbon {
+    background-color: #333;
+    padding: 10px;
+    text-align: left;
+}
+
+.headerLink {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.headerLink:hover {
+    text-decoration: underline;
+}
+
+/* Styling for upcoming events page */
+#upcomingEvents {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
 .event {
     border: 1px solid #ccc;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
+    background-color: var(--event-color, #fff);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event p {
+    margin: 5px 0;
+    color: #333;
 }
 
 .eventColor {
