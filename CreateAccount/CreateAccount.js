@@ -137,6 +137,16 @@
     }
     $("#password").on("input", checkPassword);
 
+    function showPassword(){
+        if ($("#password").attr('type')==="password"){
+            $("#password").attr('type', 'text');
+        }
+        else{
+            $("#password").attr('type', 'password');
+        }
+    }
+    $("#showPass").on("change", showPassword);
+
     /**
      * Checks if the username is valid. Uses regExp5 to determine if the username contains any white
      * space characters or special characters other than - . and _
