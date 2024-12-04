@@ -15,7 +15,7 @@
     text-align: center;
     gap: 5px;
     position: relative;
-    top: 30vh;
+    top: 15vh;
 }
 
 label {
@@ -46,4 +46,15 @@ input[type=submit] {
     position: relative;
     top: 2vh;
     flex: 0 1 auto;
+}
+
+#HomeLink {
+    color: mediumseagreen;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    position: relative;
+    top: 5vh;
 }

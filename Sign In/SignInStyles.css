@@ -1,6 +1,7 @@
 div {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #heading {
     color: mediumseagreen;
     font-size: 28px;
@@ -64,4 +65,15 @@ input[type=submit] {
 #createAccountLink:hover {
     color: #003366;
     text-decoration: underline;
+}
+
+#HomeLink {
+    color: mediumseagreen;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    position: relative;
+    top: 20vh;
 }
