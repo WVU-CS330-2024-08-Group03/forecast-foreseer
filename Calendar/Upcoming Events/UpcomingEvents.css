@@ -52,13 +52,3 @@ body {
     margin-left: 10px;
     vertical-align: middle;
 }
-
-#HomeLink {
-    color: black;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 5px;
-    position: relative;
-}
