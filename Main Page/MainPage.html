@@ -7,7 +7,7 @@
         <link href="MainPageStyles.css" rel="stylesheet">
         <link rel="icon" href="../images/favicon.png">
         <script src="MainPage.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUO65J4i89TiUkcESwlOMH3LFBKhQOfY8&libraries=places"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtitR8lFqlvEyzDrbI01yu5My5OLtF0bE&libraries=places" async defer></script>
     </head>
     <body>
 
@@ -17,8 +17,8 @@
                 <!-- Displays website name-->
                 <h3 id="SiteName">FORECAST FORESEER</h3>
 
-                <!-- Displays user location (default location if user is not signed in)-->
-                <h1 id="LocationHeader">LOCATION</h1>
+                <!-- Displays user location -->
+                <h1 id="LocationHeader" contenteditable="false">Fetching location...</h1>
 
                 <!-- Displays warning and user buttons-->
                 <div id="FlexButtons">

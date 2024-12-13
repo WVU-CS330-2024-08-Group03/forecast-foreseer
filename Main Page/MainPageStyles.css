@@ -44,6 +44,14 @@ body {
     min-width: 33%;
 }
 
+#suggestionBox div {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+#suggestionBox div:hover {
+    background-color: #f0f0f0;
+}
+
 #FlexButtons {
     display: flex;
     justify-content: right;
