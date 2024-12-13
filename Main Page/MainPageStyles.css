@@ -85,11 +85,6 @@ body {
     width: 71%;
 }
 
-#TemperatureIcon {
-    height: 4vh;
-    width: auto;
-}
-
 #WeatherAlertsBox {
     width: 30%;
 }
