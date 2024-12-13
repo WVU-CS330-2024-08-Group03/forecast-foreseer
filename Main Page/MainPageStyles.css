@@ -62,14 +62,14 @@ body {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: 77vh;
+    height: 90vh;
 }
 
 #CurrentWeather {
     display: flex;
     padding: 4px;
     margin: 4px;
-    height: 25%;
+    height: 15%;
     border-radius: 4px;
     gap: 8px;
 }
@@ -88,7 +88,7 @@ body {
     height: 70%;
     gap: 8px;
     margin: 0px 4px;
-    padding: 4px;
+    padding: 0px 4px;
 }
 
 #leftColumn { /* pre -> wind boxes*/
