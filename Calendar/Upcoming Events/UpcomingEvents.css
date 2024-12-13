@@ -2,29 +2,16 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    text-align:center;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
-.headerRibbon {
-    background-color: #333;
-    padding: 10px;
-    text-align: left;
+h1 {
+    margin-top: 20px;
 }
 
-.headerLink {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.headerLink:hover {
-    text-decoration: underline;
-}
-
-/* Styling for upcoming events page */
+/* Styling for upcoming events section */
 #upcomingEvents {
     max-width: 600px;
     margin: 20px auto;
