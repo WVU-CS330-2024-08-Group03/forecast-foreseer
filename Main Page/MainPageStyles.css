@@ -25,9 +25,18 @@ body {
     margin-right: 8px;
 }
 
+#UserIcon {
+    text-align: right;
+    height: 4vh;
+    width: auto;
+    margin: auto;
+}
+
 #SiteName {
     text-align: left;
+    height: 4vh;
     width: 33%;
+    margin: auto;
 }
 
 #LocationHeader {

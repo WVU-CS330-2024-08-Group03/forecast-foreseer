@@ -55,7 +55,8 @@ function getWeatherData(lat, lon, location) {
         .then(response => response.json())
         .then(data => {
             const weatherDescription = data.weather[0].description;
-            const temperature = data.main.temp;
+            const temperatureC = data.main.temp;
+            const temperatureF = (temperatureC * 9/5) + 32;
             const humidity = data.main.humidity;
             const windSpeed = data.wind.speed;
             const uvIndex = data.current?.uvi || 0;
@@ -63,7 +64,8 @@ function getWeatherData(lat, lon, location) {
 
             const weatherData = {
                 location,
-                temperature,
+                temperatureC,
+                temperatureF,
                 weatherDescription,
                 precipitation,
                 humidity,
@@ -107,7 +109,7 @@ function insertWeatherData(weatherData) {
  * Display the current weather on the page.
  */
 function displayCurrentWeather(weather) {
-    document.getElementById("Temperature").textContent = `${weather.temperature}°C`;
+    document.getElementById("Temperature").textContent = `${weather.temperatureF.toFixed(2)}°F (${weather.temperatureC}°C)`;
     document.getElementById("WeatherAlerts").textContent = `${weather.weatherDescription}`;
     document.getElementById("PrecipitationChance").textContent = `${weather.precipitation}%`;
     document.getElementById("Humidity").textContent = `${weather.humidity}%`;
