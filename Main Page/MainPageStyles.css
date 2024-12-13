@@ -31,31 +31,20 @@ body {
 }
 
 #Header {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 8px;
-    margin-left: 8px;
-    margin-right: 8px;
-    position: relative;
+    margin: 0px 8px;
     border-radius: 4px;
     background-color: white;
-    height: 10vh;
-    margin-top: 2vh;
+    height: 5vh;
+    margin-top: 8px;
     padding: 20px;
 }
 
-#headerRow1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-left: 8px;
-    margin-right: 8px;
-}
 
 #LocationHeader {
     text-align: center;
     min-width: 25%;
-    height: 6vh;
+    position: relative;
+    top: -2.5vh;
 }
 
 #suggestionBox div {
@@ -66,11 +55,6 @@ body {
     background-color: #f0f0f0;
 }
 
-#FlexCast {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 
 #WebAppBody {
     margin-bottom: 16px;
@@ -78,7 +62,7 @@ body {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: 80vh;
+    height: 77vh;
 }
 
 #CurrentWeather {
@@ -87,29 +71,23 @@ body {
     margin: 4px;
     height: 25%;
     border-radius: 4px;
-    gap: 1%;
+    gap: 8px;
 }
 
 #CurrentWeather div {
     text-align: center;
     background-color: white;
     border-radius: 4px;
+    width: 20%;
 }
 
-#TempBox {
-    width: 71%;
-}
-
-#WeatherAlertsBox {
-    width: 30%;
-}
 
 #columns {
     display: flex;
     flex-direction: row;
     height: 70%;
-    gap: 1%;
-    margin: 4px;
+    gap: 8px;
+    margin: 0px 4px;
     padding: 4px;
 }
 
@@ -118,7 +96,7 @@ body {
     flex-direction: column;
     width: 30%;
     min-height: 100%;
-    gap: 1%;
+    gap: 8px;
 }
 
 #leftColumn div { /* pre -> wind boxes*/
@@ -131,8 +109,8 @@ body {
 #middleColumn { /* map box*/
     display: flex;
     flex-direction: column;
-    width: 40%;
-    gap: 1%;
+    width: 70%;
+    gap: 8px;
 }
 
 #middleColumn div { /* map */
@@ -146,7 +124,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 30%;
-    gap: 1%;
+    gap: 8px;
 }
 
 #rightColumn div {

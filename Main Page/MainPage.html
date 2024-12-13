@@ -19,18 +19,8 @@
 
         <!-- Header block Forecast Foreseer main/home page-->
         <div id="Header">
-            <div id="headerRow1">
-                <!-- Displays user location -->
-                <h1 id="LocationHeader" contenteditable="false">Fetching location...</h1>
-            </div>
-            
-            <!-- Dispalys forecast options
-            <div id="FlexCast">
-                <div>Now</div>
-                <div>Hourly</div>
-                <div>10 Day</div>
-            </div> -->
-
+            <!-- Displays user location -->
+            <h1 id="LocationHeader" contenteditable="false">Fetching location...</h1>
         </div>
 
         <!-- Body block for Forecast Foreseer main/home page-->
@@ -43,7 +33,30 @@
                     <p>Temperature:</p>
                     <span id="Temperature">Temperature</span>
                 </div>
+                <!-- Displays chance of precipitation-->
+                <div>
+                    <p>Precipitation Chance:</p>
+                    <p id="PrecipitationChance">Precipitation Chance</p>
+                </div>
 
+                <!-- Displays humidity-->
+                <div>
+                    <p>Humidity:</p>
+                    <p id="Humidity">Humidity</p>
+                </div>
+
+                <!-- Displays UV Index-->
+                <div>
+                    <!-- <img src="..\images\uv_index.png.png" alt="broken image" width="20px" height="20px" style="float:left"> -->
+                    <p>UV Index:</p>
+                    <p id="UVIndex">UV Index</p>
+                </div>
+
+                <!-- Displays wind speed-->
+                <div>
+                    <p>Wind Speed:</p>
+                    <p id="Wind">Wind</p>
+                </div>
                 <!-- Displays weather alerts-->
                 <div id="WeatherAlertsBox">
                     <p>Weather:</p>
@@ -52,33 +65,7 @@
             </div>
 
             <div id="columns">
-                <div id="leftColumn">
-                    <!-- Displays chance of precipitation-->
-                    <div>
-                        <p>Precipitation Chance:</p>
-                        <p id="PrecipitationChance">Precipitation Chance</p>
-                    </div>
-
-                    <!-- Displays humidity-->
-                    <div>
-                        <p>Humidity:</p>
-                        <p id="Humidity">Humidity</p>
-                    </div>
-
-                    <!-- Displays UV Index-->
-                    <div>
-                        <!-- <img src="..\images\uv_index.png.png" alt="broken image" width="20px" height="20px" style="float:left"> -->
-                        <p>UV Index:</p>
-                        <p id="UVIndex">UV Index</p>
-                    </div>
-
-                    <!-- Displays wind speed-->
-                    <div>
-                        <p>Wind Speed:</p>
-                        <p id="Wind">Wind</p>
-                    </div>
-                </div>
-
+                
                 <div id="middleColumn">
 
                     <!-- Displays satellite map-->
