@@ -18,11 +18,12 @@
      * entered into the field. Arbitralily 150 years before the current date. Also creates variables
      * that hold the information for the current date.
      */
-    curYear = date.getFullYear();
-    curMonth = date.getMonth();
-    curDay = date.getDate();
-    minMonth = curMonth+1;
-    minDate = curYear-150+"-"+minMonth+"-"+curDay;
+    let curYear = date.getFullYear();
+    let curMonth = date.getMonth();
+    let curDay = date.getDate();
+    let minMonth = curMonth+1;
+    let minDate = curYear-150+"-"+minMonth+"-"+curDay;
+    let dateString;
     $("#birthDate").attr("min", minDate);
 
     /**

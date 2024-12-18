@@ -15,19 +15,20 @@
 
     <!-- Calendar Table -->
     <table id="calendar">
+        <caption style="display: none">Calendar</caption>
         <tr>
-            <th class="calendarTop" onclick="changeMonth(-1)">Prev Month</th>
+            <th id="prevButton" class="calendarTop" onclick="changeMonth(-1)">Prev Month</th>
             <th id="calendarMonth" class="calendarMonthName" colspan="5">Month</th>
-            <th class="calendarTop" onclick="changeMonth(1)">Next Month</th>
+            <th id="nextButton" class="calendarTop" onclick="changeMonth(1)">Next Month</th>
         </tr>
         <tr>
-            <th class="calendarHeader">Sunday</th>
-            <th class="calendarHeader">Monday</th>
-            <th class="calendarHeader">Tuesday</th>
-            <th class="calendarHeader">Wednesday</th>
-            <th class="calendarHeader">Thursday</th>
-            <th class="calendarHeader">Friday</th>
-            <th class="calendarHeader">Saturday</th>
+            <th class="calendarHeader" scope="col">Sunday</th>
+            <th class="calendarHeader" scope="col">Monday</th>
+            <th class="calendarHeader" scope="col">Tuesday</th>
+            <th class="calendarHeader" scope="col">Wednesday</th>
+            <th class="calendarHeader" scope="col">Thursday</th>
+            <th class="calendarHeader" scope="col">Friday</th>
+            <th class="calendarHeader" scope="col">Saturday</th>
         </tr>
         <tbody id="calendarBody">
             <!-- Days of the month will be generated dynamically by JavaScript -->
