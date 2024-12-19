@@ -5,9 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Forecast Foreseer Forgot Password</title>
         <link href="ForgotInfo.css" rel="stylesheet">
-        <link rel="icon" href="../images/favicon.png">
+        <link rel="icon" href="../../images/favicon.png">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script src="../ForgotInfo/ForgotPass.js"></script>
     </head>
     <body>
-        <a href="" type="_self">Contact Support</a>
+        <form method="POST" id="userInfoFields">
+            <div id="container">
+                <div>Please enter the email and username associated with your account:</div>
+                <div>
+                   <label for="email" id="emailLabel">Email:</label>
+                    <input type="email" name="email" id="email" required autocomplete="1"/>
+                </div>
+                <div>
+                 <label for="username" id="usernameLabel">Username:</label>
+                    <input type="text" name="username" id="username" required autocomplete="1"/>
+                </div>
+                <div>
+                    <input type="submit" id="userInfoSubmit">
+                </div>
+                <a href="" type="_self">Contact Support</a>
+            </div>
+        </form>
+        <form method="POST" id="changePasswordFields">
+            <div id="container"></div>
+        </form>
     </body>
 </html>

@@ -5,9 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Forecast Foreseer Forgot Password</title>
         <link href="ForgotInfo.css" rel="stylesheet">
-        <link rel="icon" href="../images/favicon.png">
+        <link rel="icon" href="../../images/favicon.png">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script src="../ForgotInfo/ForgotUser.js"></script>
     </head>
     <body>
-        <a href="" type="_self">Contact Support</a>
+        <form action="../../Main Page/MainPage.html" method="POST" id="forgotUserForm">
+            <div id="container">
+                <div>Please enter your email and password:</div>
+                <div>
+                    <label for="email" id="emailLabel">Email:</label>
+                    <input type="email" name="email" id="email"/>
+                </div>
+                <div>
+                    <label for="password" id="passLabel">Password:</label>
+                    <input type="password" name="password" id="password"/>
+                </div>
+                <div>
+                    <label for="showPass" id="showPassLabel">Show Password:</label>
+                    <input type="checkbox" name="showPass" id="showPass"/>
+                </div>
+                <div>
+                    <input type="submit" id="submitButton">
+                </div>
+                <a href="" type="_self">Contact Support</a>
+            </div>
+        </form>
     </body>
 </html>
