@@ -12,6 +12,7 @@
     let yearString;
     let dayString;
     let meetsAge = false;
+    let minAge = 13;
 
     /**
      * Determines minimum date (date furthest in the past, 1920 is further than 1950) allowed to be
@@ -69,11 +70,11 @@
          * does not meet the requirements, it falls to the month, then the day. Displays message
          * if user does not meet the minimum age, else user birth date is valid.
          */
-        if (13>year) {
+        if (minAge>year) {
             $("#isAge").css({display: 'block'});
             meetsAge = false;
         }
-        else if (13==year) {
+        else if (minAge==year) {
             if (month<0) {
                 $("#isAge").css({display: 'block'});
                 meetsAge = false;
@@ -137,6 +138,10 @@
     }
     $("#password").on("input", checkPassword);
 
+    /**
+     * Toggles the visibility of the password. Changes the password input field
+     * between type password and type text to toggle visibility.
+     */
     function showPassword(){
         if ($("#password").attr('type')==="password"){
             $("#password").attr('type', 'text');
@@ -164,9 +169,12 @@
     }
     $("#username").on("input", checkUsername);
 
-
+    /**
+     * When the user tries to submit the form, checks if age, password, and username are valid.
+     * If any of these are not valid, the form does not submit.
+     */
     $("#userInfoForm").on("submit", function(){
-        if (meetsAge==false || passValid==false){
+        if (meetsAge==false || passValid==false || usernameValid==false){
             console.log("Form failed to submit");
             event.preventDefault();
         }
