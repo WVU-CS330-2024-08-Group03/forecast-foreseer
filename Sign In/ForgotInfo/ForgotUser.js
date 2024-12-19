@@ -6,6 +6,6 @@ $(function(){
         else{
             $("#password").attr('type', 'password');
         }
-    };
+    }
     $("#showPass").on("change", togglePassword);
 });
